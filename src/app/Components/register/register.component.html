@@ -1,0 +1,60 @@
+<div id="mainTab">
+        <div id="Container">
+            <div id="left">
+                <h1 id="fundoo">
+                    <span>F</span>
+                    <span>u</span>
+                    <span>n</span>
+                    <span>D</span>
+                    <span>o</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>t</span>
+                    <span>e</span>
+                    <span>s</span>
+                </h1>
+                <h1>Create your FundooNotes Account</h1>
+                <form [formGroup]="registerpage" (ngSubmit)="regSubmit()">
+                <p id="Name">
+                    <mat-form-field appearance="outline">
+                    <mat-label>FirstName</mat-label>
+                    <input matInput placeholder="FirstName" formControlName="firstName">
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>LastName</mat-label>
+                        <input matInput placeholder="LastName" formControlName="lastName">
+                    </mat-form-field>
+                </p>
+                <p id="Email">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="Email" formControlName="email">
+                    </mat-form-field>
+                </p>
+               <p class="para">You can use letters,numbers and periods.</p>
+                <p class="emailpara">Use my current Email Address instead.</p> 
+                <p id="password">
+                    <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="Password" formControlName="password">
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Confirm</mat-label>
+                        <input matInput placeholder="Confirmpassword" formControlName="confirmpassword">
+                    </mat-form-field>
+                </p>
+             <p class="parapass">Use 8 or more charecters with mix of letters,numbers & symbols.</p> 
+                <div id="Links">
+                    <a routerLink="/Login">Sign in Instead</a>
+                    <button mat-raised-button color="primary">Login</button>
+                </div>
+                </form>
+            </div>
+               
+            
+            <div id="right">
+                <img src="../../../assets/images1.jpeg" alt="image">
+            </div>
+            
+        </div>      
+</div>

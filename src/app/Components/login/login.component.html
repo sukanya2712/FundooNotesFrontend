@@ -1,0 +1,56 @@
+<div>
+
+  <div id="container">
+    <h1>
+        <span>F</span>
+        <span>u</span>
+        <span>n</span>
+        <span>D</span>
+        <span>o</span>
+        <span>N</span>
+        <span>o</span>
+        <span>t</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <h2>Login</h2>
+    <h3>Use your GoogleNotes Account</h3>
+    <form [formGroup]="loginPage" (ngSubmit)="loginSubmit()">
+        <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="Email" formControlName="email">
+              <mat-error>Email is requird</mat-error>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="Password" formControlName="password">
+              <mat-error>Password is requird</mat-error>
+            </mat-form-field>
+          </p>
+          <p><a routerLink="/ForgetPassword" style="color: #4285F4;text-decoration: none;">Forget Password?</a></p>
+          <p style="margin-top: 8%;">Not your computer?Use Guest mode to sign in privately.</p>
+          <p style="color: #4285F4;text-decoration: none;margin-top: -5%;">Learn More</p>
+          <div id="Links">
+            <a routerLink="/Register" style="color: #4285F4;" >Registration</a>
+            <button mat-raised-button color="primary">Login</button>
+          </div>
+    </form>
+    
+  </div>
+ 
+</div>
+
+<div class = "Footer">
+  <a routerLink="">Help</a>
+  <a routerLink="">Privacy</a>
+  <a routerLink="">Terms</a>
+  
+</div>
+
+<div class = "FooterLang">
+  <a routerLink="">English(uk)</a>
+
+</div>
